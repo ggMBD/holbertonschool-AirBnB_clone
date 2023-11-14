@@ -39,7 +39,7 @@ class test_basemodel(unittest.TestCase):
         i = self.value()
         copy = i.to_dict()
         new = BaseModel(**copy)
-        self.assertFalse(new is i)
+        self.assertIsNot(new,i)
 
     def test_kwargs_int(self):
         """Test instance with kwargs as integers"""
@@ -118,3 +118,6 @@ class test_basemodel(unittest.TestCase):
         n = new.to_dict()
         new = BaseModel(**n)
         self.assertFalse(new.created_at == new.updated_at)
+
+if __name__ == '__main__':
+    unittest.main()
