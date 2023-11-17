@@ -1,0 +1,21 @@
+div.container section.places h1{
+    font-size: 30px;
+    text-align: left;
+}
+
+div.container section.places article h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+div.container section.places article {
+    display: inline-block;
+    width: 390px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #FF5A5F;
+    border-radius: 4px;
+}
+.container .places article:last-child{
+    margin: 0 25%;
+}
